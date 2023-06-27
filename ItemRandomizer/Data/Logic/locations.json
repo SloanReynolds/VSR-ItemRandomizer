@@ -1,0 +1,522 @@
+[
+  {
+    "Number": 5,
+    "Area": "Beach",
+    "Scene": "beach_west",
+    "MapX": 2,
+    "MapY": 12,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Shaifi",
+    "LogicString": "WALL_RUN & opt_randomized_puzzles & (ENERGY_CLAW & (CLAW_BREAKS_CHARGE_SHOT | CHARGE_SHOT) | CHARGE_SHOT & STRIP_SUIT) | WALL_RUN & !opt_randomized_puzzles & (ENERGY_CLAW | SPIN_DODGE & (CHARGE_SHOT | SPEED_BOOST & SPEED_BOOST_BREAKS_CLAW & STRIP_SUIT))"
+  },
+  {
+    "Number": 19,
+    "Area": "Beach",
+    "Scene": "sand_transition_2",
+    "MapX": 3,
+    "MapY": 17,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Jinvell",
+    "LogicString": "WALL_RUN & (!opt_randomized_puzzles & (CHARGE_SHOT & SPIN_DODGE & (STRIP_SUIT | ENERGY_CLAW) | SPEED_BOOST & (CHARGE_SHOT | STRIP_SUIT & (SPEED_BOOST_BREAKS_CLAW & SPIN_DODGE | ENERGY_CLAW & HEAT_RESIST) | ENERGY_CLAW & SPIN_DODGE)) | CHARGE_SHOT & opt_randomized_puzzles & SPEED_BOOST & STRIP_SUIT)"
+  },
+  {
+    "Number": 3,
+    "Area": "Calm Tundra",
+    "Scene": "base_landing_larva_secret",
+    "MapX": 11,
+    "MapY": 20,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Oracle-L",
+    "LogicString": "STRIP_SUIT"
+  },
+  {
+    "Number": 21,
+    "Area": "Calm Tundra",
+    "Scene": "base_top_right",
+    "MapX": 13,
+    "MapY": 23,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Sealime",
+    "LogicString": "WALL_RUN & opt_randomized_puzzles & (SPEED_BOOST | CHARGE_SHOT & CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & HEAT_RESIST & SPIN_DODGE & STRIP_SUIT) | !opt_randomized_puzzles & SPIN_DODGE & WALL_RUN"
+  },
+  {
+    "Number": 20,
+    "Area": "Calm Tundra",
+    "Scene": "big_tree_base_secret",
+    "MapX": 9,
+    "MapY": 24,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Drilbas",
+    "LogicString": "SPIN_DODGE & WALL_RUN"
+  },
+  {
+    "Number": 4,
+    "Area": "Calm Tundra",
+    "Scene": "first_phase_upgrade",
+    "MapX": 7,
+    "MapY": 21,
+    "GameObject": "PhaseUpgradePickup",
+    "IDStr": "PU0",
+    "LogicString": "WALL_RUN | SPIN_DODGE | !opt_randomized_puzzles & CHARGE_SHOT"
+  },
+  {
+    "Number": 15,
+    "Area": "Calm Tundra",
+    "Scene": "first_sealime",
+    "MapX": 13,
+    "MapY": 21,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Ciurivy",
+    "LogicString": ""
+  },
+  {
+    "Number": 7,
+    "Area": "Calm Tundra",
+    "Scene": "pengrunt_surprise",
+    "MapX": 16,
+    "MapY": 20,
+    "GameObject": "DecryptorPickup",
+    "IDStr": "CHARGE_MAGNET",
+    "LogicString": "!opt_randomized_puzzles & (CHARGE_SHOT | CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW) | CHARGE_SHOT & opt_randomized_puzzles"
+  },
+  {
+    "Number": 17,
+    "Area": "Calm Tundra",
+    "Scene": "return_up",
+    "MapX": 18,
+    "MapY": 20,
+    "GameObject": "DecryptorPickup",
+    "IDStr": "ALTERED_SHOT",
+    "LogicString": "WALL_RUN | CHARGE_SHOT | opt_randomized_puzzles & SPIN_DODGE"
+  },
+  {
+    "Number": 9,
+    "Area": "Caves",
+    "Scene": "charge_shot",
+    "MapX": 22,
+    "MapY": 18,
+    "GameObject": "DecryptorPickup",
+    "IDStr": "CHARGE_SHOT",
+    "LogicString": ""
+  },
+  {
+    "Number": 45,
+    "Area": "Caves",
+    "Scene": "charge_shot_shortcut",
+    "MapX": 21,
+    "MapY": 16,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Smosey",
+    "LogicString": "CHARGE_SHOT & opt_randomized_puzzles & SPIN_DODGE & WALL_RUN | !opt_randomized_puzzles & CHARGE_SHOT & CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & HEAT_RESIST & SPEED_BOOST & SPEED_BOOST_BREAKS_CLAW & SPIN_DODGE & STRIP_SUIT & WALL_RUN"
+  },
+  {
+    "Number": 13,
+    "Area": "Caves",
+    "Scene": "first_health_upgrade",
+    "MapX": 20,
+    "MapY": 19,
+    "GameObject": "HealthUpgradePickup",
+    "IDStr": "HU0",
+    "LogicString": ""
+  },
+  {
+    "Number": 16,
+    "Area": "Caves",
+    "Scene": "griger_lair_entrance",
+    "MapX": 16,
+    "MapY": 16,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Wavemoth",
+    "LogicString": "ENERGY_CLAW & WALL_RUN & opt_randomized_puzzles & (CHARGE_SHOT | CLAW_BREAKS_CHARGE_SHOT & HEAT_RESIST & SPIN_DODGE) | !opt_randomized_puzzles & (SPIN_DODGE & (ENERGY_CLAW | CHARGE_SHOT) | ENERGY_CLAW & WALL_RUN)"
+  },
+  {
+    "Number": 8,
+    "Area": "Caves",
+    "Scene": "panel_puzzle",
+    "MapX": 19,
+    "MapY": 18,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Toucade",
+    "LogicString": "ENERGY_CLAW & SPIN_DODGE & WALL_RUN & opt_randomized_puzzles & (CLAW_BREAKS_CHARGE_SHOT | CHARGE_SHOT & STRIP_SUIT) | !opt_randomized_puzzles & SPIN_DODGE"
+  },
+  {
+    "Number": 22,
+    "Area": "Caves",
+    "Scene": "return_panel_puzzle_secret",
+    "MapX": 20,
+    "MapY": 16,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Midow",
+    "LogicString": "WALL_RUN | !opt_randomized_puzzles | CHARGE_SHOT & opt_randomized_puzzles & STRIP_SUIT"
+  },
+  {
+    "Number": 10,
+    "Area": "Caves",
+    "Scene": "run_on_water",
+    "MapX": 22,
+    "MapY": 21,
+    "GameObject": "DecryptorPickup",
+    "IDStr": "DOUBLE_SHOT",
+    "LogicString": "!opt_randomized_puzzles & SPEED_BOOST & WALL_RUN | CHARGE_SHOT & opt_randomized_puzzles & SPEED_BOOST & STRIP_SUIT & WALL_RUN"
+  },
+  {
+    "Number": 23,
+    "Area": "Caves",
+    "Scene": "spin_dodge",
+    "MapX": 26,
+    "MapY": 13,
+    "GameObject": "DecryptorPickup",
+    "IDStr": "SPIN_DODGE",
+    "LogicString": "!opt_randomized_puzzles & (WALL_RUN | SPIN_DODGE | CHARGE_SHOT) | opt_randomized_puzzles & WALL_RUN"
+  },
+  {
+    "Number": 44,
+    "Area": "Caves",
+    "Scene": "try_charge_shot_secret",
+    "MapX": 25,
+    "MapY": 17,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Prittle",
+    "LogicString": "!opt_randomized_puzzles & (SPIN_DODGE | CHARGE_SHOT | STRIP_SUIT & WALL_RUN) | opt_randomized_puzzles & (WALL_RUN & (SPEED_BOOST | ENERGY_CLAW & (SPIN_DODGE | CLAW_BREAKS_CHARGE_SHOT | CHARGE_SHOT)) | CHARGE_SHOT & STRIP_SUIT)"
+  },
+  {
+    "Number": 12,
+    "Area": "Deep Caves",
+    "Scene": "deep_cave_climb",
+    "MapX": 31,
+    "MapY": 5,
+    "GameObject": "HealthUpgradePickup",
+    "IDStr": "HU3",
+    "LogicString": "STRIP_SUIT & WALL_RUN & opt_randomized_puzzles & (CHARGE_SHOT | CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & SPEED_BOOST & SPIN_DODGE) | WALL_RUN & !opt_randomized_puzzles & (CHARGE_SHOT & (ENERGY_CLAW & SPEED_BOOST & (STRIP_SUIT | HEAT_RESIST & SPIN_DODGE) | HEAT_RESIST & STRIP_SUIT) | SPIN_DODGE & STRIP_SUIT)"
+  },
+  {
+    "Number": 18,
+    "Area": "Deep Caves",
+    "Scene": "heart_block_choice",
+    "MapX": 22,
+    "MapY": 14,
+    "GameObject": "HealthUpgradePickup",
+    "IDStr": "HU1",
+    "LogicString": "!opt_randomized_puzzles & (CHARGE_SHOT | CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & WALL_RUN) | WALL_RUN & opt_randomized_puzzles & (CHARGE_SHOT | CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & (STRIP_SUIT | HEAT_RESIST & SPIN_DODGE))"
+  },
+  {
+    "Number": 24,
+    "Area": "Deep Caves",
+    "Scene": "use_heat_resist",
+    "MapX": 29,
+    "MapY": 2,
+    "GameObject": "DecryptorPickup",
+    "IDStr": "CLAW_BREAKS_CHARGE_SHOT",
+    "LogicString": "(opt_randomized_puzzles & EvErYtHiNg) | (!opt_randomized_puzzles & (WALL_RUN & (ENERGY_CLAW & SPEED_BOOST & STRIP_SUIT & (CHARGE_SHOT | CLAW_BREAKS_CHARGE_SHOT & HEAT_RESIST & SPIN_DODGE) | CHARGE_SHOT & SPIN_DODGE)))"
+  },
+  {
+    "Number": 46,
+    "Area": "Griger Lair",
+    "Scene": "altered_griger_arena",
+    "MapX": 14,
+    "MapY": 18,
+    "GameObject": "clawDecryptor",
+    "IDStr": "ENERGY_CLAW",
+    "LogicString": "!opt_randomized_puzzles & (SPIN_DODGE | ENERGY_CLAW & WALL_RUN) | WALL_RUN & opt_randomized_puzzles & (SPIN_DODGE & (HEAT_RESIST | CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW) | CHARGE_SHOT & ENERGY_CLAW)"
+  },
+  {
+    "Number": 25,
+    "Area": "Griger Lair",
+    "Scene": "griger_no_energy",
+    "MapX": 16,
+    "MapY": 11,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Pengrunt",
+    "LogicString": "!opt_randomized_puzzles & (ENERGY_CLAW | CHARGE_SHOT & SPIN_DODGE) | WALL_RUN & opt_randomized_puzzles & (SPIN_DODGE & (CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW | CHARGE_SHOT & STRIP_SUIT) | CHARGE_SHOT & ENERGY_CLAW)"
+  },
+  {
+    "Number": 2,
+    "Area": "Griger Lair",
+    "Scene": "griger_pre_boss_elevator",
+    "MapX": 13,
+    "MapY": 17,
+    "GameObject": "CreatureCardBossPickup",
+    "IDStr": "Card_Griger",
+    "LogicString": "ENERGY_CLAW & WALL_RUN & opt_randomized_puzzles & (CHARGE_SHOT | CLAW_BREAKS_CHARGE_SHOT & SPIN_DODGE) | !opt_randomized_puzzles & (SPIN_DODGE | ENERGY_CLAW & (WALL_RUN | CHARGE_SHOT))"
+  },
+  {
+    "Number": 1,
+    "Area": "Mountains",
+    "Scene": "all_chamber_puzzle",
+    "MapX": 25,
+    "MapY": 30,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Salesman",
+    "LogicString": "CHARGE_SHOT & CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & opt_randomized_puzzles & SPEED_BOOST & SPIN_DODGE & STRIP_SUIT & WALL_RUN | !opt_randomized_puzzles & CHARGE_SHOT & CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & HEAT_RESIST & SPEED_BOOST & SPEED_BOOST_BREAKS_CLAW & SPIN_DODGE & STRIP_SUIT & WALL_RUN"
+  },
+  {
+    "Number": 1,
+    "Area": "Mountains",
+    "Scene": "all_chamber_puzzle",
+    "MapX": 25,
+    "MapY": 30,
+    "GameObject": "PhaseUpgradePickup",
+    "IDStr": "PU3",
+    "LogicString": "WALL_RUN & (CHARGE_SHOT | CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & SPIN_DODGE)"
+  },
+  {
+    "Number": 6,
+    "Area": "Mountains",
+    "Scene": "before_glitch_encounter",
+    "MapX": 29,
+    "MapY": 22,
+    "GameObject": "PhaseUpgradePickup",
+    "IDStr": "PU2",
+    "LogicString": "SPIN_DODGE & WALL_RUN & opt_randomized_puzzles & (SPEED_BOOST | HEAT_RESIST) | CHARGE_SHOT & WALL_RUN | !opt_randomized_puzzles & SPIN_DODGE & WALL_RUN | CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & SPIN_DODGE & WALL_RUN"
+  },
+  {
+    "Number": 42,
+    "Area": "Mountains",
+    "Scene": "heartspeed",
+    "MapX": 22,
+    "MapY": 24,
+    "GameObject": "DecryptorPickup",
+    "IDStr": "HEAT_RESIST",
+    "LogicString": "CHARGE_SHOT & WALL_RUN"
+  },
+  {
+    "Number": 43,
+    "Area": "Mountains",
+    "Scene": "larva_fall",
+    "MapX": 30,
+    "MapY": 15,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Froesburn",
+    "LogicString": "SPIN_DODGE & STRIP_SUIT & WALL_RUN | CHARGE_SHOT & opt_randomized_puzzles & STRIP_SUIT & WALL_RUN | !opt_randomized_puzzles & CHARGE_SHOT & HEAT_RESIST & STRIP_SUIT & WALL_RUN"
+  },
+  {
+    "Number": 26,
+    "Area": "Mountains",
+    "Scene": "mountain_climb_2",
+    "MapX": 27,
+    "MapY": 24,
+    "GameObject": "DecryptorPickup",
+    "IDStr": "SPEED_BOOST_BREAKS_CLAW",
+    "LogicString": "SPIN_DODGE & WALL_RUN & !opt_randomized_puzzles & (CHARGE_SHOT | ENERGY_CLAW & SPEED_BOOST) | WALL_RUN & opt_randomized_puzzles & (SPIN_DODGE & (STRIP_SUIT | SPEED_BOOST | CHARGE_SHOT & ENERGY_CLAW) | CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & STRIP_SUIT)"
+  },
+  {
+    "Number": 27,
+    "Area": "Mountains",
+    "Scene": "orb2",
+    "MapX": 26,
+    "MapY": 22,
+    "GameObject": "Orb2",
+    "IDStr": "ORB2",
+    "LogicString": "SPIN_DODGE & WALL_RUN & opt_randomized_puzzles & (SPEED_BOOST | ENERGY_CLAW) | CHARGE_SHOT & WALL_RUN | !opt_randomized_puzzles & SPIN_DODGE & WALL_RUN"
+  },
+  {
+    "Number": 47,
+    "Area": "Music Floatlands",
+    "Scene": "music_floatlands_top_stretch",
+    "MapX": 9,
+    "MapY": 30,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Royalrose",
+    "LogicString": "SPIN_DODGE & WALL_RUN | !opt_randomized_puzzles & CHARGE_SHOT & ENERGY_CLAW & WALL_RUN"
+  },
+  {
+    "Number": 28,
+    "Area": "Music Floatlands",
+    "Scene": "music_floatlands_top_stretch",
+    "MapX": 9,
+    "MapY": 30,
+    "GameObject": "HealthUpgradePickup",
+    "IDStr": "HU2",
+    "LogicString": "WALL_RUN & !opt_randomized_puzzles & (SPIN_DODGE | CHARGE_SHOT) | WALL_RUN & opt_randomized_puzzles & (SPIN_DODGE & (HEAT_RESIST | ENERGY_CLAW | CHARGE_SHOT) | CHARGE_SHOT & ENERGY_CLAW & STRIP_SUIT)"
+  },
+  {
+    "Number": 29,
+    "Area": "Music Floatlands",
+    "Scene": "orb1",
+    "MapX": 10,
+    "MapY": 28,
+    "GameObject": "Orb1",
+    "IDStr": "ORB1",
+    "LogicString": "WALL_RUN & !opt_randomized_puzzles & (SPIN_DODGE | CHARGE_SHOT) | WALL_RUN & opt_randomized_puzzles & (CHARGE_SHOT & (STRIP_SUIT & (SPIN_DODGE | ENERGY_CLAW & (SPEED_BOOST | HEAT_RESIST)) | SPEED_BOOST & SPIN_DODGE) | ENERGY_CLAW & SPIN_DODGE)"
+  },
+  {
+    "Number": 30,
+    "Area": "Music Floatlands",
+    "Scene": "orb1_secret",
+    "MapX": 9,
+    "MapY": 28,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Rupo",
+    "LogicString": "SPEED_BOOST & WALL_RUN & opt_randomized_puzzles & (CHARGE_SHOT & SPEED_BOOST_BREAKS_CLAW & STRIP_SUIT & (ENERGY_CLAW | HEAT_RESIST & SPIN_DODGE) | CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & SPIN_DODGE) | SPEED_BOOST & WALL_RUN & !opt_randomized_puzzles & (CHARGE_SHOT & (STRIP_SUIT | SPIN_DODGE | HEAT_RESIST | ENERGY_CLAW) | CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & HEAT_RESIST & SPIN_DODGE & STRIP_SUIT)"
+  },
+  {
+    "Number": 31,
+    "Area": "Music Floatlands",
+    "Scene": "sherivice_rest",
+    "MapX": 14,
+    "MapY": 30,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Sherivice",
+    "LogicString": "WALL_RUN & !opt_randomized_puzzles & (SPIN_DODGE | CHARGE_SHOT) | WALL_RUN & opt_randomized_puzzles & (ENERGY_CLAW & (SPIN_DODGE | CHARGE_SHOT & STRIP_SUIT & (HEAT_RESIST | SPEED_BOOST & SPEED_BOOST_BREAKS_CLAW)) | CHARGE_SHOT & SPIN_DODGE)"
+  },
+  {
+    "Number": 32,
+    "Area": "Music Floatlands",
+    "Scene": "solatia_run",
+    "MapX": 14,
+    "MapY": 27,
+    "GameObject": "CreatureCardBossPickup",
+    "IDStr": "Card_Solatia",
+    "LogicString": "SPIN_DODGE & WALL_RUN & opt_randomized_puzzles & (SPEED_BOOST | CHARGE_SHOT & HEAT_RESIST & STRIP_SUIT) | SPIN_DODGE & WALL_RUN & !opt_randomized_puzzles & (STRIP_SUIT & (HEAT_RESIST & SPEED_BOOST & SPEED_BOOST_BREAKS_CLAW | CHARGE_SHOT & CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW) | ENERGY_CLAW & SPEED_BOOST | CHARGE_SHOT & HEAT_RESIST) | CHARGE_SHOT & SPEED_BOOST & WALL_RUN"
+  },
+  {
+    "Number": 32,
+    "Area": "Music Floatlands",
+    "Scene": "solatia_run",
+    "MapX": 14,
+    "MapY": 27,
+    "GameObject": "DecryptorPickup",
+    "IDStr": "SPEED_BOOST",
+    "LogicString": "SPIN_DODGE & WALL_RUN & opt_randomized_puzzles & (SPEED_BOOST | CHARGE_SHOT & ENERGY_CLAW & HEAT_RESIST & STRIP_SUIT) | SPIN_DODGE & WALL_RUN & !opt_randomized_puzzles & (STRIP_SUIT & (HEAT_RESIST & SPEED_BOOST & SPEED_BOOST_BREAKS_CLAW | CHARGE_SHOT & CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW) | ENERGY_CLAW & SPEED_BOOST | CHARGE_SHOT & HEAT_RESIST) | CHARGE_SHOT & SPEED_BOOST & WALL_RUN"
+  },
+  {
+    "Number": 33,
+    "Area": "Music Floatlands",
+    "Scene": "totem_c",
+    "MapX": 11,
+    "MapY": 25,
+    "GameObject": "DecryptorPickup",
+    "IDStr": "MENTAL_RECOVERY",
+    "LogicString": "CHARGE_SHOT & WALL_RUN & opt_randomized_puzzles & (STRIP_SUIT | ENERGY_CLAW & (SPEED_BOOST | HEAT_RESIST)) | SPIN_DODGE & WALL_RUN | !opt_randomized_puzzles & CHARGE_SHOT & WALL_RUN"
+  },
+  {
+    "Number": 36,
+    "Area": "Roots",
+    "Scene": "between_secret",
+    "MapX": 10,
+    "MapY": 17,
+    "GameObject": "DecryptorPickup",
+    "IDStr": "CHARGE_GRIP",
+    "LogicString": "WALL_RUN & opt_randomized_puzzles & (ENERGY_CLAW | CHARGE_SHOT) | !opt_randomized_puzzles & (CHARGE_SHOT | SPEED_BOOST & WALL_RUN & (CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW | SPEED_BOOST_BREAKS_CLAW & SPIN_DODGE & STRIP_SUIT) | ENERGY_CLAW & SPIN_DODGE)"
+  },
+  {
+    "Number": 37,
+    "Area": "Roots",
+    "Scene": "platform_chasm",
+    "MapX": 9,
+    "MapY": 16,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Magoom",
+    "LogicString": "WALL_RUN & opt_randomized_puzzles & (CHARGE_SHOT | CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & SPEED_BOOST & SPIN_DODGE & STRIP_SUIT) | !opt_randomized_puzzles & (CHARGE_SHOT | SPIN_DODGE & (ENERGY_CLAW | SPEED_BOOST & SPEED_BOOST_BREAKS_CLAW & STRIP_SUIT & WALL_RUN))"
+  },
+  {
+    "Number": 35,
+    "Area": "Roots",
+    "Scene": "reveal_decryptor",
+    "MapX": 6,
+    "MapY": 18,
+    "GameObject": "DecryptorPickup",
+    "IDStr": "SHOW_IMPORTANT",
+    "LogicString": "!opt_randomized_puzzles & (CHARGE_SHOT | SPIN_DODGE & (ENERGY_CLAW | SPEED_BOOST & SPEED_BOOST_BREAKS_CLAW & STRIP_SUIT & WALL_RUN)) | ENERGY_CLAW & opt_randomized_puzzles & WALL_RUN"
+  },
+  {
+    "Number": 34,
+    "Area": "Roots",
+    "Scene": "speed_shortcut_chasm",
+    "MapX": 5,
+    "MapY": 14,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Cottospark",
+    "LogicString": "WALL_RUN & opt_randomized_puzzles & (ENERGY_CLAW & SPIN_DODGE | CHARGE_SHOT & STRIP_SUIT) | WALL_RUN & !opt_randomized_puzzles & (CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & (STRIP_SUIT & (CHARGE_SHOT | SPEED_BOOST & SPEED_BOOST_BREAKS_CLAW & SPIN_DODGE) | CHARGE_SHOT & HEAT_RESIST & SPEED_BOOST) | CHARGE_SHOT & SPIN_DODGE)"
+  },
+  {
+    "Number": 34,
+    "Area": "Roots",
+    "Scene": "speed_shortcut_chasm",
+    "MapX": 5,
+    "MapY": 14,
+    "GameObject": "CreatureCardPickup (1)",
+    "IDStr": "Card_Cottocache",
+    "LogicString": "WALL_RUN & opt_randomized_puzzles & (CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & SPEED_BOOST & SPIN_DODGE & (STRIP_SUIT | CHARGE_SHOT) | CHARGE_SHOT & STRIP_SUIT) | CHARGE_SHOT & WALL_RUN & !opt_randomized_puzzles & (ENERGY_CLAW & (CLAW_BREAKS_CHARGE_SHOT & (STRIP_SUIT | HEAT_RESIST & (SPIN_DODGE | SPEED_BOOST)) | SPEED_BOOST & SPEED_BOOST_BREAKS_CLAW & STRIP_SUIT) | SPIN_DODGE & STRIP_SUIT)"
+  },
+  {
+    "Number": 11,
+    "Area": "Warehouse",
+    "Scene": "glitch_encounter",
+    "MapX": 28,
+    "MapY": 22,
+    "GameObject": "GlitchDecryptorPickup",
+    "IDStr": "STRIP_SUIT",
+    "LogicString": "CHARGE_SHOT & WALL_RUN | !opt_randomized_puzzles & SPIN_DODGE & WALL_RUN | CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & opt_randomized_puzzles & SPIN_DODGE & WALL_RUN"
+  },
+  {
+    "Number": 38,
+    "Area": "Warehouse",
+    "Scene": "orb3",
+    "MapX": 32,
+    "MapY": 12,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Oracle",
+    "LogicString": "CHARGE_SHOT & STRIP_SUIT & WALL_RUN & !opt_randomized_puzzles & (HEAT_RESIST | ENERGY_CLAW & SPEED_BOOST & SPEED_BOOST_BREAKS_CLAW) | SPIN_DODGE & STRIP_SUIT & WALL_RUN | CHARGE_SHOT & opt_randomized_puzzles & STRIP_SUIT & WALL_RUN"
+  },
+  {
+    "Number": 38,
+    "Area": "Warehouse",
+    "Scene": "orb3",
+    "MapX": 32,
+    "MapY": 12,
+    "GameObject": "Orb3",
+    "IDStr": "ORB3",
+    "LogicString": "HEAT_RESIST & STRIP_SUIT & WALL_RUN & !opt_randomized_puzzles & (CHARGE_SHOT | CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & SPEED_BOOST & SPIN_DODGE) | CHARGE_SHOT & SPIN_DODGE & STRIP_SUIT & WALL_RUN | CHARGE_SHOT & opt_randomized_puzzles & STRIP_SUIT & WALL_RUN"
+  },
+  {
+    "Number": 39,
+    "Area": "Water Caves",
+    "Scene": "larva_water_trial_end",
+    "MapX": 2,
+    "MapY": 11,
+    "GameObject": "CreatureCardPickup",
+    "IDStr": "Card_Ghostily",
+    "LogicString": "WALL_RUN & !opt_randomized_puzzles & (SPEED_BOOST & STRIP_SUIT & (ENERGY_CLAW & (CHARGE_SHOT & (SPEED_BOOST_BREAKS_CLAW | HEAT_RESIST) | SPEED_BOOST_BREAKS_CLAW & SPIN_DODGE) | HEAT_RESIST & SPEED_BOOST_BREAKS_CLAW & SPIN_DODGE) | CHARGE_SHOT & SPIN_DODGE) | CHARGE_SHOT & ENERGY_CLAW & opt_randomized_puzzles & SPIN_DODGE & STRIP_SUIT & WALL_RUN"
+  },
+  {
+    "Number": 39,
+    "Area": "Water Caves",
+    "Scene": "larva_water_trial_end",
+    "MapX": 2,
+    "MapY": 11,
+    "GameObject": "DecryptorPickup",
+    "IDStr": "NO_OBJECTIONS",
+    "LogicString": "ENERGY_CLAW & STRIP_SUIT & WALL_RUN & opt_randomized_puzzles & (CLAW_BREAKS_CHARGE_SHOT & (SPIN_DODGE | CHARGE_SHOT) | CHARGE_SHOT & SPIN_DODGE) | STRIP_SUIT & WALL_RUN & !opt_randomized_puzzles & (ENERGY_CLAW & (CHARGE_SHOT & (HEAT_RESIST | SPEED_BOOST & SPEED_BOOST_BREAKS_CLAW | CLAW_BREAKS_CHARGE_SHOT & SPIN_DODGE) | SPEED_BOOST & SPEED_BOOST_BREAKS_CLAW & SPIN_DODGE) | HEAT_RESIST & SPEED_BOOST & SPEED_BOOST_BREAKS_CLAW & SPIN_DODGE)"
+  },
+  {
+    "Number": 40,
+    "Area": "Water Caves",
+    "Scene": "orb0",
+    "MapX": 6,
+    "MapY": 10,
+    "GameObject": "Orb0",
+    "IDStr": "ORB0",
+    "LogicString": "WALL_RUN & opt_randomized_puzzles & (STRIP_SUIT & (CHARGE_SHOT | CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & HEAT_RESIST & SPIN_DODGE) | CHARGE_SHOT & SPEED_BOOST) | CHARGE_SHOT & !opt_randomized_puzzles & (WALL_RUN & (STRIP_SUIT & (SPIN_DODGE | ENERGY_CLAW & SPEED_BOOST & (HEAT_RESIST | CLAW_BREAKS_CHARGE_SHOT & SPEED_BOOST_BREAKS_CLAW)) | CLAW_BREAKS_CHARGE_SHOT & ENERGY_CLAW & HEAT_RESIST & SPIN_DODGE) | ENERGY_CLAW & SPEED_BOOST & SPIN_DODGE)"
+  },
+  {
+    "Number": 41,
+    "Area": "Water Caves",
+    "Scene": "return_griger_lore",
+    "MapX": 8,
+    "MapY": 14,
+    "GameObject": "PhaseUpgradePickup",
+    "IDStr": "PU1",
+    "LogicString": "CHARGE_SHOT & WALL_RUN & opt_randomized_puzzles & (STRIP_SUIT | ENERGY_CLAW) | !opt_randomized_puzzles & (WALL_RUN & (SPIN_DODGE & STRIP_SUIT & (CHARGE_SHOT | HEAT_RESIST & SPEED_BOOST & SPEED_BOOST_BREAKS_CLAW) | CHARGE_SHOT & ENERGY_CLAW & HEAT_RESIST & SPEED_BOOST) | CHARGE_SHOT & ENERGY_CLAW & SPIN_DODGE) | ENERGY_CLAW & SPIN_DODGE & WALL_RUN"
+  },
+  {
+    "Number": 14,
+    "Area": "Water Caves",
+    "Scene": "wall_run_decryptor",
+    "MapX": 17,
+    "MapY": 9,
+    "GameObject": "DecryptorPickup",
+    "IDStr": "WALL_RUN",
+    "LogicString": "ENERGY_CLAW & WALL_RUN & opt_randomized_puzzles & (CLAW_BREAKS_CHARGE_SHOT & STRIP_SUIT | CHARGE_SHOT & SPIN_DODGE) | !opt_randomized_puzzles & (ENERGY_CLAW & WALL_RUN & (CLAW_BREAKS_CHARGE_SHOT & SPIN_DODGE | CHARGE_SHOT & HEAT_RESIST & SPEED_BOOST) | CHARGE_SHOT & SPIN_DODGE)"
+  }
+]

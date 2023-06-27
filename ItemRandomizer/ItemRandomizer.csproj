@@ -1,0 +1,93 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net46</TargetFramework>
+		<AssemblyName>ItemRandomizer</AssemblyName>
+		<Description>Finally, an Item Rando for Vision: Soft Reset! After over a year of foot-dragging! Huzzah!</Description>
+		<Version>1.1.0</Version>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<LangVersion>9.0</LangVersion>
+		<Authors>CaptainDapper</Authors>
+		<PostBuildEvent>
+			copy "C:\Users\sloan\source\repos\VSR.ItemRandomizer\ItemRandomizer\bin\Release\net46\ItemRandomizer.dll" "G:\Games\Steam\steamapps\common\Vision Soft Reset\BepInEx\plugins\ItemRandomizer.dll" /Y
+			copy "C:\Users\sloan\source\repos\VSR.ItemRandomizer\ItemRandomizer\bin\Release\net46\ItemRandomizer.dll" "E:\Projects\Vision Soft Reset\RANDO_INSTALL\BepInEx\plugins\ItemRandomizer.dll" /Y
+			copy "C:\Users\sloan\source\repos\VSR.ItemRandomizer\ItemRandomizer\bin\Release\net46\ReleaseNotes.md" "E:\Projects\Vision Soft Reset\RANDO_INSTALL\ItemRando_ReleaseNotes.md" /Y</PostBuildEvent>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Data\Lib\Newtonsoft.Json.dll" />
+	  <None Remove="Data\Lib\System.Data.dll" />
+	  <None Remove="Data\Lib\System.Numerics.dll" />
+	  <None Remove="Data\Lib\System.Runtime.Serialization.dll" />
+	  <None Remove="Data\Logic\locations.json" />
+	  <None Remove="Data\Logic\macros.json" />
+	  <None Remove="Resources\Puzzles\Lab-Clues.png" />
+	  <None Remove="Resources\Puzzles\Panel-Big-Shapes.png" />
+	  <None Remove="Resources\Puzzles\StickyNotes.png" />
+	  <None Remove="Resources\Puzzles\Totems-Music.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Data\Lib\Newtonsoft.Json.dll" />
+	  <EmbeddedResource Include="Data\Lib\System.Data.dll" />
+	  <EmbeddedResource Include="Data\Lib\System.Numerics.dll" />
+	  <EmbeddedResource Include="Data\Lib\System.Runtime.Serialization.dll" />
+	  <EmbeddedResource Include="Data\Logic\macros.json" />
+	  <EmbeddedResource Include="Resources\Puzzles\Lab-Clues.png" />
+	  <EmbeddedResource Include="Resources\Puzzles\Panel-Big-Shapes.png" />
+	  <EmbeddedResource Include="Resources\Puzzles\Panel-Small-Hourglass.png" />
+	  <EmbeddedResource Include="Resources\Puzzles\Panel-Three-Amigos.png" />
+	  <EmbeddedResource Include="Resources\Puzzles\Totems-Music.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+		<PackageReference Include="BepInEx.Core" Version="5.*" />
+		<PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta1" />
+		<PackageReference Include="UnityEngine.Modules" Version="2019.4.17" IncludeAssets="compile" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="Assembly-CSharp">
+	    <HintPath>..\LIB\Assembly-CSharp.dll</HintPath>
+	  </Reference>
+	  <Reference Include="System.Net.Http">
+	    <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll</HintPath>
+	  </Reference>
+	  <Reference Include="System.Web">
+	    <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Web.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UI">
+	    <HintPath>G:\Games\Steam\steamapps\common\Vision Soft Reset\Vision Soft Reset_Data\Managed\UnityEngine.UI.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Data\Logic\locations.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Resources\Puzzles\StickyNotes.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="ReleaseNotes.md">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<PostBuildEvent>copy "C:\Users\sloan\source\repos\VSR.ItemRandomizer\ItemRandomizer\bin\Debug\net46\ItemRandomizer.dll" "G:\Games\Steam\steamapps\common\Vision Soft Reset\BepInEx\plugins\ItemRandomizer.dll" /Y</PostBuildEvent>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<PostBuildEvent>
+			copy "C:\Users\sloan\source\repos\VSR.ItemRandomizer\ItemRandomizer\bin\Release\net46\ItemRandomizer.dll" "G:\Games\Steam\steamapps\common\Vision Soft Reset\BepInEx\plugins\ItemRandomizer.dll" /Y
+			copy "C:\Users\sloan\source\repos\VSR.ItemRandomizer\ItemRandomizer\bin\Release\net46\ItemRandomizer.dll" "E:\Projects\Vision Soft Reset\RANDO_INSTALL\BepInEx\plugins\ItemRandomizer.dll" /Y
+			copy "C:\Users\sloan\source\repos\VSR.ItemRandomizer\ItemRandomizer\bin\Release\net46\ReleaseNotes.md" "E:\Projects\Vision Soft Reset\RANDO_INSTALL\ItemRando_ReleaseNotes.md" /Y</PostBuildEvent>
+	</PropertyGroup>
+</Project>
